@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: #5a3e36;
+    background-color: #eeebe8; /* Fallback color */
+}
+
+/* Toolbar (Header) */
+.toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #eeebe8; /* Semi-transparent white */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    color: #5a3e36; /* Text color */
+}
+
+.toolbar h1, .toolbar p {
+    margin: 5px 0;
+}
+
+/* Navigation Links */
+.nav-links {
+    margin-top: 150px; /* Adjusts for the height of the fixed header */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #272626;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    color: #312f2f;
+}
+
+/* Main Content Area */
+.main-content {
+    background-color: #131211; /* Solid background color for the main content */
+    padding-top: 120px; /* Makes space for the fixed header */
+}
+
+/* Parallax Section */
+.parallax {
+    background: url('background-us.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+}
+
+/* Wedding Details Section */
+.details {
+    padding: 40px;
+}
+
+/* Gallery Section */
+@keyframes slideLeftRight {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    position: relative;
+    animation: slideLeftRight 4s infinite ease-in-out;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu-list {
+   
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 20px;
+    }
+.menu-list img {
+        width: 400px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+.menu-list img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+footer {
+    background-color: #f8e8e1;
+    padding: 20px;
+    text-align: center;
+    color: #5a3e36;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Drawing Section */
+.drawing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.drawing img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.drawing img:hover {
+    transform: scale(1.1);
+}
+.menu h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #8b5e83;
+    margin-bottom: 20px;
+}
+.menu p {
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #8b5e83;
+    background: #fdf8fb;
+    border-radius: 5px;
+}
+header p {
+    margin: 5px 0;
+}
+

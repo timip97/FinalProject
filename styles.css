@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: #5a3e36;
+    background-color: #eeebe8; /* Fallback color */
+}
+
+/* Toolbar (Header) */
+.toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #eeebe8; /* Semi-transparent white */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    color: #5a3e36; /* Text color */
+}
+
+.toolbar h1, .toolbar p {
+    margin: 5px 0;
+}
+
+/* Navigation Links */
+.nav-links {
+    margin-top: 100px; /* Adjusts for the height of the fixed header */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #272626;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    color: #312f2f;
+}
+
+/* Main Content Area */
+.main-content {
+    background-color: #131211; /* Solid background color for the main content */
+    padding-top: 120px; /* Makes space for the fixed header */
+}
+
+/* Parallax Section */
+.parallax {
+    background: url('background-us.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+}
+
+/* Wedding Details Section */
+.details {
+    padding: 40px;
+}
+
+/* Gallery Section */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* RSVP Section */
+.rsvp {
+    background-color: #f8e8e1;
+    padding: 40px;
+}
+
+.rsvp input, .rsvp button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.rsvp input {
+    width: 80%;
+    max-width: 300px;
+}
+
+.rsvp button {
+    background-color: #5a3e36;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.rsvp button:hover {
+    background-color: #7a564e;
+}
+
+/* Footer */
+footer {
+    background-color: #f8e8e1;
+    padding: 20px;
+    text-align: center;
+    color: #5a3e36;
+}
+
+footer p {
+    margin: 0;
+}
+
+#countdown {
+    font-size: 1.5em;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+#clock {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#timer {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #661412;
+}
+
+.respond-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #741534;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.respond-button:hover {
+    background-color: #e6005c;
+}
+/* Drawing Section */
+.drawing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.drawing img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.drawing img:hover {
+    transform: scale(1.1);
+}
+
+#backToMain {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#backToMain:hover {
+    background-color: #0056b3;
+}

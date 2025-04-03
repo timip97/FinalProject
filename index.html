@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="toolbar">
+        <h1>You're Invited!</h1>
+        <p>Join us in celebrating our special day</p>
+    </header>
+    
+    <nav class="nav-links">
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="rsvp-form/respond.html">RSVP</a></li>
+            <li><a href="menu/menu.html">Menu</a></li>
+            <li><a href="staff/staff.html">STAFF</a></li>
+        </ul>
+    </nav>
+    
+    <section class="parallax" id="welcome">
+        <h2>Welcome to Our Wedding</h2>
+    </section>
+    
+    <section class="details" id="details">
+        <h2>Wedding Details</h2>
+        <p>Date: June 15, 2025</p>
+        <p>Location: Rosewood Garden, Paris</p>
+        <div id="countdown">
+            <h3>Time Left Until the Big Day:</h3>
+            <div id="clock-container">
+                <canvas id="clock" width="150" height="150"></canvas>
+            <p id="timer">Loading...</p>
+        </div>
+    </section>
+    
+    <section class="gallery" id="gallery">
+        <h2>Our Journey</h2>
+        <div class="gallery-container">
+            <img src="couple.jpg" alt="Couple photo">
+            <img src="engagement.jpg" alt="Engagement">
+            <img src="memories.jpg" alt="Memories">
+        </div>
+    </section>
+    
+    <section class="respond-form" id="respond-form">
+        <h2>We can't wait to celebrate with you!</h2>
+        <a href="rsvp-form/respond.html" class="respond-button">Go to RSVP</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Wedding Invitation. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

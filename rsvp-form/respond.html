@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Respond</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="../rsvp-form/form.css" />
+    </head>
+    <body>
+        <header class="toolbar">
+            <h1>You're Invited!</h1>
+            <p>Join us in celebrating our special day</p>
+        </header>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../menu/menu.html">Menu</a></li>
+                <li><a href="../staff/staff.html">STAFF</a></li>
+            </ul>
+        </nav>
+
+        <!-- Secțiunea de imagine mare -->
+        <section class="parallax">
+            <h2>Welcome to Our Wedding</h2>
+        </section>
+
+        <main>
+            <form id="contact-form">
+                <input type="text" name="user_name" placeholder="Your Name" required />
+                <input type="email" name="user_email" placeholder="Your Email" required />
+
+                <label>
+                    <input type="radio" name="attendance" value="yes" required /> Accept
+                </label>
+                <label>
+                    <input type="radio" name="attendance" value="no" required /> Decline
+                </label>
+
+                <h3>Number of Guests</h3>
+                <label> Adults: <input type="number" name="adults" min="0" required /> </label>
+                <label> Children: <input type="number" name="children" min="0" optional /> </label>
+
+                <h3>Menu Selection</h3>
+                <label>
+                    Adult Menu:
+                    <select name="adult_menu">
+                        <option value="normal">Normal</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="kids">Kids Menu</option>
+                    </select>
+                </label>
+
+                <label>
+                    Children's Menu:
+                    <select name="children_menu">
+                        <option value="normal">Normal</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="kids">Kids Menu</option>
+                    </select>
+                </label>
+
+                <label>
+                    Do you have any allergies?
+                    <select name="allergies">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </label>
+
+                <textarea name="message" placeholder="Leave a message (optional)"></textarea>
+
+                <h3>Accommodation</h3>
+                <label>
+                    Do you need accommodation?
+                    <select name="accomodation">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </label>
+
+                <br /><br />
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <p id="status"></p>
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script src="form.js"></script>
+    </body>
+</html>
